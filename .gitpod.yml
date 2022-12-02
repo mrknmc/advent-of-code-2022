@@ -1,2 +1,1 @@
-image:
-  file: .gitpod.Dockerfile
+image: gitpod/workspace-python-3.10
