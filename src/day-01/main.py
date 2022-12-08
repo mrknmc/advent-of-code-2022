@@ -1,12 +1,10 @@
-
-
 def main():
-    lines = open('src/day-01/data1.txt', 'r').readlines()
+    lines = open("src/day-01/data1.txt", "r").readlines()
     total = 0
     max = 0
     totals = []
     for line in lines:
-        if line == '\n':
+        if line == "\n":
             totals.append(total)
             if total >= max:
                 max = total
@@ -14,11 +12,12 @@ def main():
         else:
             total += int(line)
 
-    print(f'Part 1: {max}')
+    print(f"Part 1: {max}")
 
     sorted_totals = sorted(totals)
 
-    print(f'Part 2: {sum(sorted_totals[-3:])}')
+    print(f"Part 2: {sum(sorted_totals[-3:])}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
